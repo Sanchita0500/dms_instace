@@ -1,0 +1,10 @@
+env                        = "prod"
+region                     = "ap-south-1"
+dynamo_table_name          = "notification-preference"
+oracle_username            = "dms_reader"
+oracle_password            = "YOUR_PROD_PASSWORD"
+docdb_host                 = "docdb.cluster-prod.embark.amazonaws.com"
+docdb_service_name         = "ORCL"
+dms_replication_role_arn   = "arn:aws:iam::<account_id>:role/dms-vpc-role-prod"
+replication_subnet_group_id = "subnet-group-id-prod"
+vpc_security_group_ids     = ["sg-aaa", "sg-bbb"]

@@ -1,0 +1,10 @@
+env                        = "uat"
+region                     = "ap-south-1"
+dynamo_table_name          = "notification-preference"
+oracle_username            = "dms_reader"
+oracle_password            = "YOUR_UAT_PASSWORD"
+docdb_host                 = "docdb.cluster-uat.embark.amazonaws.com"
+docdb_service_name         = "ORCL"
+dms_replication_role_arn   = "arn:aws:iam::<account_id>:role/dms-vpc-role-uat"
+replication_subnet_group_id = "subnet-group-id-uat"
+vpc_security_group_ids     = ["sg-xxx", "sg-yyy"]
