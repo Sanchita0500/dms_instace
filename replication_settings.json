@@ -1,0 +1,20 @@
+{
+  "TargetMetadata": {
+    "TargetSchema": "",
+    "SupportLobs": true,
+    "FullLobMode": false,
+    "LobChunkSize": 64,
+    "LimitedSizeLobMode": true,
+    "LobMaxSize": 32,
+    "InlineLobMaxSize": 0
+  },
+  "FullLoadSettings": {
+    "TargetTablePrepMode": "DO_NOTHING"
+  },
+  "ControlTablesSettings": {
+    "controlSchema": "dms_control"
+  },
+  "TargetTableSettings": {
+    "updateMode": "PARTIAL_UPDATE"
+  }
+}

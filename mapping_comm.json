@@ -1,0 +1,32 @@
+{
+  "rules": [
+    {
+      "rule-type": "selection",
+      "rule-id": "1",
+      "rule-name": "1",
+      "object-locator": {
+        "schema-name": "%",
+        "table-name": "party_communication_info"
+      },
+      "rule-action": "include"
+    },
+    {
+      "rule-type": "mapping",
+      "rule-id": "2",
+      "rule-name": "2",
+      "rule-action": "map-record-to-record",
+      "rule-target": "column",
+      "object-locator": {
+        "schema-name": "%",
+        "table-name": "party_communication_info"
+      },
+      "mapping-parameters": {
+        "record-keys": ["party_id"],
+        "record-values": {
+          "mobile_number": "${pref_mobile_number}",
+          "emailId": "${pref_email_address}"
+        }
+      }
+    }
+  ]
+}

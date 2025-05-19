@@ -1,0 +1,27 @@
+{
+  "rules": [
+    {
+      "rule-type": "selection",
+      "rule-id": "1",
+      "rule-name": "1",
+      "object-locator": {
+        "schema-name": "%",
+        "table-name": "party"
+      },
+      "rule-action": "include"
+    },
+    {
+      "rule-type": "transformation",
+      "rule-id": "2",
+      "rule-name": "2",
+      "rule-action": "add-column",
+      "rule-target": "column",
+      "object-locator": {
+        "schema-name": "%",
+        "table-name": "party"
+      },
+      "value": "concat(${first_name}, ' ', ${last_name})",
+      "expression": "name"
+    }
+  ]
+}
